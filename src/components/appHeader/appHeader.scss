@@ -1,0 +1,54 @@
+@import '../../style/variables.scss';
+
+.app {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 37px;
+        span {
+            color: $main-color;
+        }
+    }
+    &__menu {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            li {
+                margin: 0 8px;
+                a:hover {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .app {
+        &__header {
+            // width: 100%;
+            width: 390px;
+        }
+        &__title {
+            font-size: 12px;
+        }
+        &__menu {
+            margin-top: 3px;
+            margin-right: 110px;
+            ul {
+                font-size: 12px;
+                li {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
