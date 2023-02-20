@@ -10,9 +10,6 @@ import ErrorBoundary from "../errorBoundary/ErrorBoundary";
 import decoration from "../../resources/img/vision.png";
 
 const MainPage = () => {
-  // const [selectedChar, setChar] = useState(
-  //   "21942195-9a12-42a0-a38c-7ef245769275"
-  // );
   const [selectedChar, setChar] = useState(
     ''
   );

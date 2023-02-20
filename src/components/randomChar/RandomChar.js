@@ -27,7 +27,7 @@ const RandomChar = () => {
                 <p className="randomchar__title">
                     Or choose another one
                 </p>
-                <button className="button button__main"
+                <button className="button button__main randomchar__btn"
                         onClick={() => {
                             refetch()
                         }}>

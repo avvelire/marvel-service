@@ -34,3 +34,19 @@
         }
     }
 }
+
+
+@media only screen and (max-width: 768px) {
+    .comics{
+        &__grid{
+            place-content: center;
+        }
+        &__item{
+            margin-left: 40px;
+            &-img{
+                width: 150px;
+                height: 200px;
+            }
+        }
+    }
+}

@@ -59,14 +59,31 @@
 
 @media only screen and (max-width: 768px) {
     .char{
+        &__name {
+            text-align: center;
+            margin-top: -10px;
+            font-size: 13px;
+            line-height: 15px;
+        }
         &__list {
-            width: 100%;
+            width: 390px;
+            button{
+                margin: 20px 0px 0px 120px;
+            }
         }
         // width: 100%;
         &__grid {
-            width: 100%;
+            width: 390px;
             // width: 390px;;
             grid-template-columns: repeat(1, 200px);
+        }
+        &__item {
+            width: 150px;
+            height: 200px;
+            img{
+                width: 150px;
+                height: 150px;
+            }
         }
     }
     }

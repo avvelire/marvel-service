@@ -34,19 +34,18 @@
 @media only screen and (max-width: 768px) {
     .app {
         &__header {
-            // width: 100%;
+            margin: -40px 0px 0px 5px;
             width: 390px;
         }
         &__title {
-            font-size: 12px;
+            font-size: 15px;
         }
         &__menu {
             margin-top: 3px;
-            margin-right: 110px;
             ul {
-                font-size: 12px;
+                font-size: 15px;
                 li {
-                    font-size: 12px;
+                    font-size: 15px;
                 }
             }
         }

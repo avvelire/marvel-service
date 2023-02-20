@@ -37,3 +37,33 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .single-comic {
+        // display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &__img{
+            margin-left: 0px;
+            display: flex;
+            height: 300px;
+            width: 200px;
+
+        }
+        &__info {
+            width: 100%;
+        }
+        &__name {
+            margin-top: 20px;
+            padding: 10px;
+        }
+        &__descr{
+            padding: 0 0 10px 10px;
+        }
+        &__price{
+            padding: 0 0 10px 10px;
+        }
+    }
+}

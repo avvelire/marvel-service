@@ -16,8 +16,7 @@ import { FIND_ALL_CHARS } from "../../gql/queries";
 const CharSearchForm = () => {
   const [charId, setCharId] = useState(null);
   const [nameChar, setNameChar] = useState(null);
-  //   console.log(char);
-  const { loadig, error, data } = useQuery(FIND_ALL_CHARS, {
+  const { data } = useQuery(FIND_ALL_CHARS, {
     variables: { query: { skip: 0, take: 1000 } },
   });
   console.log(data);
@@ -30,7 +29,8 @@ const CharSearchForm = () => {
     if (charName) {
         setNameChar(charName.name);
         setCharId(charName.id);
-      console.log("WARNING!!", nameChar);
+    }else {
+      setCharId('notFound')
     }
   };
 

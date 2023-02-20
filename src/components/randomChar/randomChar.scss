@@ -64,22 +64,64 @@
 
 
 @media only screen and (max-width: 768px) {
+
     .randomchar {
         display: flex;
         flex-direction: column;
-        width: 390px;
+        margin-top: -20px;
+        // width: 390px;
+        // height: 100px;
         // width: 100%;
         &__block {
             width: 390px;
+            height: 130px;
+            padding: 10px 0;
+            margin-bottom: 30px;
+        }
+        &__info {
+            padding: 0px;
+        }
+        &__name {
+            margin-top: 10px;
+            font-size: 15px;
+            line-height: 15px;
+            height: 10px;
+        }
+        &__descr {
+            margin-right: 10px;
+            // position: absolute;
+            margin-top: 5px;
+            font-size: 9px;
+            line-height: 12px;
         }
         &__static {
             // width: 30px;
             width: 100%;
-
+            height: 155px;
+            button {
+                margin-top: 15px;
+            }
         }
         &__title {
-            font-size: 10px;
+            font-size: 15px;
+            line-height: 15px;
+            margin-top: -10px;
+            &:nth-child(2) {
+                margin-top: 20px;
+            }
         }
-
+        &__img {
+            margin: 10px 0px 0px 40px;
+            width: 130px;
+            height: 130px;
+        }
+        &__decoration {
+            right: -10px;
+            height: 130px;
+            width: 130px;
+        }
+        &__btns{
+            margin-top: -120px;
+        }
     }
 }

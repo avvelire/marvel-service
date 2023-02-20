@@ -29,7 +29,7 @@
             display: block;
             position: absolute;
             left: 0;
-            top: -10px;
+            top: -9px;
             transition: none;
         }
         &::after {
@@ -40,7 +40,7 @@
             display: block;
             position: absolute;
             right: 0;
-            bottom: -10px;
+            bottom: -9px;
             transform: rotate(180deg);
             transition: none;
         }
@@ -58,7 +58,7 @@
                 transition: none;
             }
             &::after {
-                border-color: $grey transparent; 
+                border-color: $grey transparent;
                 transition: none;
             }
         }
@@ -75,7 +75,7 @@
         content: '';
         display: block;
         height: 10px;
-        margin-right: 10px;
+        margin-right: 9px;
         transition: none;
 
     }
@@ -87,5 +87,38 @@
     }
     &:hover {
         transform: translateY(-5px);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .button{
+        &__main{
+        margin-top: 90px;
+        font-size: 10px;
+        min-width: 10px;
+        .inner {
+            width: 70px;
+            height: 15px;
+            padding: 0px;
+        }
+        }
+        &__long{
+            width: 70px;
+            height: 5px;
+        }
+        &__secondary{
+            font-size: 10px;
+            &::before{
+                width: 60px;
+            }
+            .inner {
+                width: 70px;
+                height: 15px;
+                padding: 0px;
+            }
+            &::after{
+                width: 60px;
+            }
+        }
     }
 }
